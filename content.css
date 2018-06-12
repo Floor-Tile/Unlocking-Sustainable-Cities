@@ -2,6 +2,44 @@
   font-family: 'Libre Franklin', sans-serif;
 }
 
+div.slide-left {
+  width:100%;
+  overflow:hidden;
+  color: white;
+}
+#cities {
+  animation: slide-left 10s;
+}
+#corporate {
+  animation-delay: 2s;
+  animation: slide-left 10s;
+}
+#but {
+  animation-delay: 3s;
+  animation: slide-left 10s;
+}
+#urban {
+  animation-delay: 4s;
+  animation: slide-left 10s;
+}
+#lets {
+  animation-delay: 5s;
+  animation: slide-left 10s;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
 body{
   /* Location of the image */
   background-image: url(images/lilac.jpg);

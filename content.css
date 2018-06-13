@@ -2,44 +2,6 @@
   font-family: 'Libre Franklin', sans-serif;
 }
 
-div.slide-left {
-  width:100%;
-  overflow:hidden;
-  color: white;
-}
-#cities {
-  animation: slide-left 10s;
-}
-#corporate {
-  animation-delay: 2s;
-  animation: slide-left 10s;
-}
-#but {
-  animation-delay: 3s;
-  animation: slide-left 10s;
-}
-#urban {
-  animation-delay: 4s;
-  animation: slide-left 10s;
-}
-#lets {
-  animation-delay: 5s;
-  animation: slide-left 10s;
-}
-
-@keyframes slide-left {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-
 body{
   /* Location of the image */
   background-image: url(images/lilac.jpg);
@@ -59,6 +21,12 @@ body{
 
   /* Pick a solid background color that will be displayed while the background image is loading */
   background-color:#464646;
+
+  padding: 20px;
+}
+
+html,body{
+  height: 100%;
 }
 
 /* For mobile devices */
@@ -70,84 +38,83 @@ body{
   }
 }
 
-h1{
-  text-align: center;
+.title{
+  border: 5px solid black;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.9);
+  width: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 10px;
+  resize: both;
+  overflow: auto;
+}
+
+.title h1{
   font-size: 70px;
+  text-align: center;
   font-weight: bold;
   color: #000000;
 }
 
-h2{
+.title h3{
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+}
+
+.sub{
+  margin-top: 800px;
+  animation: slide-left 10s;
+}
+
+.sub p{
+  font-size: 20px;
+  color: #000000;
+  font-weight: bold;
+  text-shadow: 10px 0px 20px white;
+}
+
+.sub h2{
   font-size: 35px;
 }
 
-.title{
-  padding-top: 370px;
+div.slide-left {
+  width:100%;
+  overflow:hidden;
+  color: white;
 }
 
-.trans-box{
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.chapters{
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+button{
+  text-align: center;
+  border: 2px solid black;
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 250px;
+}
+
+button:hover{
+  font-weight: bold;
+  background-color: rgba(255,255,255,1.0);
   border: 5px solid black;
-  background-color: rgba(255,255,255,1.0);
-  border-radius: 15px;
-}
-
-p{
-  text-align: center;
-  font-size: 30px;
-}
-
-#car-free h2{
-  text-align: center;
-  border: 2px solid black;
-  background-color: rgba(255,255,255,0.6);
-  border-radius: 15px;
-  box-sizing: border-box;
-  padding: 20px;
-}
-
-#car-free:hover{
-  background-color: rgba(255,255,255,1.0);
-  border-radius: 15px;
-}
-
-#post-carbon h2{
-  text-align: center;
-  border: 2px solid black;
-  background-color: rgba(255,255,255,0.6);
-  border-radius: 15px;
-  box-sizing: border-box;
-  padding: 20px;
-}
-
-#post-carbon:hover{
-  background-color: rgba(255,255,255,1.0);
-  border-radius: 15px;
-}
-
-#bio h2{
-  text-align: center;
-  border: 2px solid black;
-  background-color: rgba(255,255,255,0.6);
-  border-radius: 15px;
-  box-sizing: border-box;
-  padding: 20px;
-}
-
-#bio:hover{
-  background-color: rgba(255,255,255,1.0);
-  border-radius: 15px;
-}
-
-#common h2{
-  text-align: center;
-  border: 2px solid black;
-  background-color: rgba(255,255,255,0.6);
-  border-radius: 15px;
-  box-sizing: border-box;
-  padding: 20px;
-}
-
-#common:hover{
-  background-color: rgba(255,255,255,1.0);
-  border-radius: 15px;
 }

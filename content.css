@@ -105,27 +105,11 @@ div.slide-left {
   }
 }
 
-div.slide-right {
-  width:100%;
-  overflow:hidden;
-  color: white;
-}
-
-@keyframes slide-right {
-  from {
-    margin-right: 0%;
-    width: 100%;
-  }
-  to {
-    margin-right: 100%;
-    width: 100%;
-  }
-}
-
 .chapters{
   margin-top: 100px;
   margin-bottom: 200px;
 }
+
 button{
   text-align: center;
   border: 2px solid black;

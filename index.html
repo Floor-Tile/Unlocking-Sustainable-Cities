@@ -11,7 +11,12 @@
   <!-- Link css stylesheet -->
   <link rel="stylesheet" href="content.css">
   <!-- Link JQuery -->
-  <script src="js/jquery-3.3.1.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="scroll/jquery.scrollme.js"></script>
+  <!--<script src="script.js"></script>-->
   <!-- Link google font family -->
   <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
 </head>
@@ -30,49 +35,99 @@
 
   <div class="container">
     <section class="sub">
-      <div id="cities" class="slide-left">
+      <div class="scrollme">
+        <div id="cities"
+        class="animateme"
+        data-when="enter"
+        data-from="1"
+        data-to="0"
+        data-opacity="0"
+        data-translatex="-500"
+        data-rotatez="0"
+        >
         <p><span>•	Cities are being locked into unsustainable and damaging practices</span></p>
       </div>
-      <div id="corporate" class="slide-left">
-        <p><span>•	Corporate greed, ecological destruction and inequality are all on the rise</span></p>
-      </div>
-      <div id="but" class="slide-left">
-        <p><span>•	But something amazing and invisible is happening</span></p>
-      </div>
-      <div id="urban" class="slide-left">
-        <p><span>•	Urban innovators from all walks of life are unlocking the huge potential of real sustainability</span></p>
-      </div>
-      <div id="lets" class="slide-left">
-        <p><span>•	Lets take a journey through this great unlocking</span></p>
-      </div>
-    </section>
-
-    <section class="chapters">
-      <div class="row">
-        <div class="col-lg-3">
-          <button id="car-free">
-            <h2> The Car-free City </h2>
-          </button>
-        </div>
-        <div class="col-lg-3">
-          <button id="post-carbon">
-            <h2> The Post-carbon City </h2>
-          </button>
-        </div>
-        <div class="w-100"></div>
-        <div class="col-lg-3">
-          <button id="bio">
-            <h2> The Bio City </h2>
-          </button>
-        </div>
-        <div class="col-lg-3">
-          <button id="common">
-            <h2> The Common City </h2>
-          </button>
-        </div>
-      </div>
-    </section>
+    </div>
+          <div class="scrollme">
+      <div id="corporate"
+      class="animateme"
+      data-when="enter"
+      data-from="1"
+      data-to="0"
+      data-opacity="0"
+      data-translatex="-500"
+      data-rotatez="0"
+      >
+      <p><span>•	Corporate greed, ecological destruction and inequality are all on the rise</span></p>
+    </div>
   </div>
+        <div class="scrollme">
+    <div id="but"
+    class="animateme"
+    data-when="enter"
+    data-from="1"
+    data-to="0"
+    data-opacity="0"
+    data-translatex="-500"
+    data-rotatez="0"
+    >
+    <p><span>•	But something amazing and invisible is happening</span></p>
+  </div>
+</div>
+      <div class="scrollme">
+  <div id="urban"
+  class="animateme"
+  data-when="enter"
+  data-from="1"
+  data-to="0"
+  data-opacity="0"
+  data-translatex="-500"
+  data-rotatez="0"
+  >
+  <p><span>•	Urban innovators from all walks of life are unlocking the huge potential of real sustainability</span></p>
+</div>
+</div>
+      <div class="scrollme">
+<div id="lets"
+class="animateme"
+data-when="enter"
+data-from="1"
+data-to="0"
+data-opacity="0"
+data-translatex="-500"
+data-rotatez="0"
+>
+<p><span>•	Lets take a journey through this great unlocking</span></p>
+</div>
+</div>
+</section>
+
+<section class="chapters">
+  <div class="row">
+    <div class="col-lg-3">
+      <button id="car-free">
+        <h2> The Car-free City </h2>
+      </button>
+    </div>
+    <div class="col-lg-3">
+      <button id="post-carbon">
+        <h2> The Post-carbon City </h2>
+      </button>
+    </div>
+    <div class="w-100"></div>
+    <div class="col-lg-3">
+      <button id="bio">
+        <h2> The Bio City </h2>
+      </button>
+    </div>
+    <div class="col-lg-3">
+      <button id="common">
+        <h2> The Common City </h2>
+      </button>
+    </div>
+  </div>
+</section>
+</div>
 
 </body>
 

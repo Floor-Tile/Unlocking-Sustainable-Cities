@@ -67,8 +67,7 @@ html,body{
 }
 
 .sub{
-  margin-top: 800px;
-  animation: slide-left 10s;
+  margin-top: 500px;
 }
 
 .sub p{

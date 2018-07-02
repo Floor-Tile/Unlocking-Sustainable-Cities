@@ -2,7 +2,21 @@
   font-family: 'Libre Franklin', sans-serif;
 }
 
-body{
+html,body{
+  height: 100%;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  body {
+    /* The file size of this background image is 93% smaller
+    * to improve page load speed on mobile internet connections */
+    background-image: url(images/cfcfinal.jpg);
+  }
+}
+
+/* HOMEPAGE*/
+#index{
   /* Location of the image */
   background-image: url(images/lilac.jpg);
 
@@ -20,25 +34,12 @@ body{
   background-size: cover;
 
   /* Pick a solid background color that will be displayed while the background image is loading */
-  background-color:#464646;
+  background-color:#FFFFFF;
 
-  padding: 20px;
+  padding:20px;
 }
 
-html,body{
-  height: 100%;
-}
-
-/* For mobile devices */
-@media only screen and (max-width: 767px) {
-  body {
-    /* The file size of this background image is 93% smaller
-    * to improve page load speed on mobile internet connections */
-    background-image: url(images/cfcfinal.jpg);
-  }
-}
-
-.title{
+.main-title{
   border: 5px solid black;
   border-radius: 15px;
   background-color: rgba(255,255,255,0.9);
@@ -52,14 +53,14 @@ html,body{
   overflow: auto;
 }
 
-.title h1{
+.main-title h1{
   font-size: 70px;
   text-align: center;
   font-weight: bold;
   color: #000000;
 }
 
-.title h3{
+h3{
   font-size: 30px;
   text-align: center;
   font-weight: bold;
@@ -67,7 +68,7 @@ html,body{
 }
 
 .sub{
-  margin-top: 500px;
+  margin-top: 70%;
 }
 
 .sub p{
@@ -123,4 +124,132 @@ button:hover{
   font-weight: bold;
   background-color: rgba(255,255,255,1.0);
   border: 5px solid black;
+}
+
+/*CAR FREE CITY PAGE */
+#car-free{
+  /* Location of the image */
+  background-image: url(images/cfcfinal.jpg);
+
+  /* Image is centered vertically and horizontally at all times */
+  background-position: left;
+
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+
+  /* Makes the image fixed in the viewport so that it doesn't move when
+  the content height is greater than the image height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: 50% 100%;
+
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color:#E5D5AC;
+
+  padding: 20px;
+}
+
+.car-free-title{
+  border: 5px solid black;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.9);
+  width: 45%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 15%;
+  left: 74.5%;
+  padding: 10px;
+  resize: both;
+  overflow: auto;
+}
+
+.car-free-title h1{
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+}
+
+.car-free-text{
+  border: 5px solid black;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.9);
+  width: 45%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 60%;
+  left: 74.5%;
+  padding: 10px;
+  resize: both;
+  overflow: auto;
+}
+
+.car-free-text p{
+  font-size: 20px;
+  color: #000000;
+}
+
+/*POST CARBON CITY PAGE */
+#post-carbon{
+  /* Location of the image */
+  background-image: url(images/PCP.jpg);
+
+  /* Image is centered right at all times */
+  background-position: right;
+
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+
+  /* Makes the image fixed in the viewport so that it doesn't move when
+  the content height is greater than the image height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: 50% 100%;
+
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color:#BACCE4;
+
+  padding: 20px;
+}
+
+.post-carbon-title{
+  border: 5px solid black;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.9);
+  width: 45%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 15%;
+  left: 25.5%;
+  padding: 10px;
+  resize: both;
+  overflow: auto;
+}
+
+.post-carbon-title h1{
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+}
+
+.post-carbon-text{
+  border: 5px solid black;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.9);
+  width: 45%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 60%;
+  left: 25.5%;
+  padding: 10px;
+  resize: both;
+  overflow: auto;
+}
+
+.post-carbon-text p{
+  font-size: 20px;
+  color: #000000;
 }

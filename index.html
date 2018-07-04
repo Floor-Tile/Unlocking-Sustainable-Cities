@@ -28,7 +28,7 @@
     <section class="content">
       <div class="main-title">
         <h1>Unlocking Sustainable Cities</h1>
-        <h3 class="main-sub-title">A manifesto for real change.</h3>
+        <h3>A manifesto for real change.</h3>
       </div>
     </section>
   </header>
@@ -39,26 +39,28 @@
         <div id="cities"
         class="animateme"
         data-when="enter"
-        data-from="1"
+        data-from="0.6"
         data-to="0"
         data-opacity="0"
-        data-translatex="-500"
-        data-rotatez="0"
+        data-translatex="-800"
+        data-rotatez="10"
+        data-easing="easeinout"
         >
-        <p><span>•	Cities are being locked into unsustainable and damaging practices</span></p>
+        <p><span>•	Cities are being locked into unsustainable and damaging practices.</span></p>
       </div>
     </div>
     <div class="scrollme">
       <div id="corporate"
       class="animateme"
       data-when="enter"
-      data-from="1"
+      data-from="0.6"
       data-to="0"
       data-opacity="0"
-      data-translatex="-500"
-      data-rotatez="0"
+      data-translatex="-800"
+      data-rotatez="20"
+      data-easing="easeinout"
       >
-      <p><span>•	Corporate greed, ecological destruction and inequality are all on the rise</span></p>
+      <p><span>•	Corporate greed, ecological destruction and inequality are all on the rise.</span></p>
     </div>
   </div>
   <div class="scrollme">
@@ -68,10 +70,11 @@
     data-from="1"
     data-to="0"
     data-opacity="0"
-    data-translatex="-500"
+    data-translatex="-800"
     data-rotatez="0"
+    data-easing="easeinout"
     >
-    <p><span>•	But something amazing and invisible is happening</span></p>
+    <p id="something"><span>But something amazing and invisible is happening...</span></p>
   </div>
 </div>
 <div class="scrollme">
@@ -81,10 +84,11 @@
   data-from="1"
   data-to="0"
   data-opacity="0"
-  data-translatex="-500"
-  data-rotatez="0"
+  data-translatex="800"
+  data-rotatez="10"
+  data-easing="easeinout"
   >
-  <p><span>•	Urban innovators from all walks of life are unlocking the huge potential of real sustainability</span></p>
+  <p id="urban"><span>Urban innovators from all walks of life are unlocking the huge potential of real sustainability.</span></p>
 </div>
 </div>
 <div class="scrollme">
@@ -94,10 +98,11 @@
   data-from="1"
   data-to="0"
   data-opacity="0"
-  data-translatex="-500"
-  data-rotatez="0"
+  data-translatex="800"
+  data-rotatez="20"
+  data-easing="easeinout"
   >
-  <p><span>•	Lets take a journey through this great unlocking</span></p>
+  <p id="urban"><span>Lets take a journey through this great unlocking...</span></p>
 </div>
 </div>
 </section>
@@ -112,19 +117,42 @@
     </div>
     <div class="w-100"></div>
     <div class="col-lg-3">
-      <button id="bio">
-        <h2> The Bio City </h2>
-      </button>
+    <a href="bio-city.html"><button id="bio"><h2>The Bio City</h2></button></a>
     </div>
     <div class="col-lg-3">
-      <button id="common">
-        <h2> The Common City </h2>
-      </button>
+    <a href="common-city.html"><button id="common"><h2>The Common City</h2></button></a>
     </div>
   </div>
 </section>
 </div>
 
-</body>
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container-fluid">
+    <div class="row">
 
+      <div class="col-lg-6 col-md-6">
+
+        <div class="foot-left">
+          <h3> Get In Touch! </h3>
+
+          <form role='form'>
+            <label for="email">Subscribe here:</label>
+            <input type="text" name="email" >
+            <button type="submit" id="email">Submit!</button>
+          </form>
+          <p> © Flora Tiley, 2018 </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-6">
+        <div class="foot-right">
+          <h3>Buy the book!</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
 </html>

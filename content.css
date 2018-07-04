@@ -35,8 +35,6 @@ html,body{
 
   /* Pick a solid background color that will be displayed while the background image is loading */
   background-color:#FFFFFF;
-
-  padding:20px;
 }
 
 .main-title{
@@ -60,8 +58,8 @@ html,body{
   color: #000000;
 }
 
-h3{
-  font-size: 30px;
+.main-title h3{
+  font-size: 40px;
   text-align: center;
   font-weight: bold;
   color: #000000;
@@ -72,15 +70,30 @@ h3{
 }
 
 .sub p{
-  font-size: 30px;
+  font-size: 35px;
   text-align: left;
   color: #000000;
-  padding: 20px;
+  padding: 60px;
+}
+
+.sub #something{
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+  padding: 60px;
+}
+
+.sub #urban{
+  font-size: 35px;
+  text-align: right;
+  color: #000000;
+  padding: 60px;
 }
 
 .sub span{
   border-radius: 15px;
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255,255,255,1);
   padding: 10px;
 }
 
@@ -88,29 +101,12 @@ h3{
   font-size: 35px;
 }
 
-div.slide-left {
-  width:100%;
-  overflow:hidden;
-  color: white;
-}
-
-@keyframes slide-left {
-  from {
-    margin-left: 100%;
-    width: 100%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
 .chapters{
-  margin-top: 100px;
+  margin-top: 130px;
   margin-bottom: 200px;
 }
 
-button{
+.row button{
   text-align: center;
   border: 2px solid black;
   background-color: rgba(255,255,255,0.6);
@@ -120,7 +116,12 @@ button{
   width: 250px;
 }
 
-button:hover{
+.row button h2{
+  font-size: 40px;
+  color: black;
+}
+
+.row button:hover{
   font-weight: bold;
   background-color: rgba(255,255,255,1.0);
   border: 5px solid black;
@@ -145,7 +146,7 @@ button:hover{
   background-size: 50% 100%;
 
   /* Pick a solid background color that will be displayed while the background image is loading */
-  background-color:#E5D5AC;
+  /*background-color:#FFFFFF;*/
 
   padding: 20px;
 }
@@ -209,7 +210,7 @@ button:hover{
   background-size: 50% 100%;
 
   /* Pick a solid background color that will be displayed while the background image is loading */
-  background-color:#BACCE4;
+  /*background-color:#FFFFFF;*/
 
   padding: 20px;
 }
@@ -252,4 +253,190 @@ button:hover{
 .post-carbon-text p{
   font-size: 20px;
   color: #000000;
+}
+
+/*BIO CITY PAGE */
+#bio-city{
+  /* Location of the image */
+  background-image: url(images/bio.jpg);
+
+  /* Image is centered right at all times */
+  background-position: left;
+
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+
+  /* Makes the image fixed in the viewport so that it doesn't move when
+  the content height is greater than the image height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: 50% 100%;
+
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  /*background-color:#FFFFFF;*/
+
+  padding: 20px;
+}
+
+.bio-city-title{
+  border: 5px solid black;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.9);
+  width: 45%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 15%;
+  left: 74.5%;
+  padding: 10px;
+  resize: both;
+  overflow: auto;
+}
+
+.bio-city-title h1{
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+}
+
+.bio-city-text{
+  border: 5px solid black;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.9);
+  width: 45%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 74.5%;
+  padding: 10px;
+  resize: both;
+  overflow: auto;
+}
+
+.bio-city-text p{
+  font-size: 20px;
+  color: #000000;
+}
+
+/*COMMON CITY PAGE */
+#common-city{
+  /* Location of the image */
+  background-image: url(images/common.jpg);
+
+  /* Image is centered right at all times */
+  background-position: right;
+
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+
+  /* Makes the image fixed in the viewport so that it doesn't move when
+  the content height is greater than the image height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: 50% 100%;
+
+  /* Pick a solid background color that will be displayed while the background image is loading
+  background-color:#FFFFFF;*/
+
+  padding: 20px;
+}
+
+.common-city-title{
+  border: 5px solid black;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.9);
+  width: 45%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 15%;
+  left: 25.5%;
+  padding: 10px;
+  resize: both;
+  overflow: auto;
+}
+
+.common-city-title h1{
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+}
+
+.common-city-text{
+  border: 5px solid black;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.9);
+  width: 45%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 60%;
+  left: 25.5%;
+  padding: 10px;
+  resize: both;
+  overflow: auto;
+}
+
+.common-city-text p{
+  font-size: 20px;
+  color: #000000;
+}
+
+/* FOOTER */
+
+.footer {
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: #E8E8E8;
+  color: black;
+  height: 200px;
+  margin-top: 60px;
+  position:bottom;
+}
+
+.footer p{
+  font-size: 15px;
+}
+
+.foot-left {
+  margin-left: 20px;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.foot-left h3{
+  margin-bottom: 20px;
+}
+
+.foot-left p{
+  padding-top: 15px;
+}
+
+.foot-left button{
+  text-align: center;
+  border: 2px solid black;
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 150px;
+}
+
+.foot-left button h2{
+  font-size: 20px;
+  color: black;
+}
+
+.foot-right {
+  margin-right: 20px;
+  text-align: right;
+  padding-top: 20px;
+}
+
+form{
+  font-size: 20px;
+  margin-top:20px;
 }

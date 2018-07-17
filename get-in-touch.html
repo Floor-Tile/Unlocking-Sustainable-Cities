@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Insert title -->
+  <title>Get In Touch</title>
+  <!-- Make the page mobile friendly -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- Link bootstrap -->
+  <link href='css/bootstrap.css' rel='stylesheet'>
+  <!-- Link css stylesheet -->
+  <link rel="stylesheet" href="content.css">
+  <!-- Link JQuery -->
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="scroll/jquery.scrollme.js"></script>
+  <!--<script src="script.js"></script>-->
+  <!-- Link google font family -->
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
+</head>
+
+<body id="get-in-touch">
+<header class="container">
+  <div class="get-in-touch">
+    <h1>Get In Touch</h1>
+  </div>
+</header>
+  <div class="container">
+    <section class="contact-form">
+      <p>There are countless inspiring examples of people unlocking real sustainable cities across the world.
+        I would love to hear from you if you have got an inspiring example. I will post a selection here as I receive them.
+        Use the form below...
+      </p>
+    </section>
+  </div>
+
+  <div class="container">
+  <form action="action_page.php">
+
+    <label for="example">Name of Example</label>
+    <input type="text" id="example" name="name-example" placeholder="Name of Example...">
+
+    <label for="location">Location</label>
+    <input type="text" id="location" name="location-info" placeholder="Location...">
+
+    <label for="chapter">Chapter</label>
+    <select id="chapter" name="chapter">
+      <option value="car-free">The Car Free City</option>
+      <option value="post-carbon">The Post-Carbon City</option>
+      <option value="bio">The Bio City</option>
+      <option value="common">The Common City</option>
+    </select>
+
+    <label for="description">Description</label>
+    <textarea id="description" name="description" placeholder="Quick description... (Max 200 words)" style="height:200px"></textarea>
+
+    <label for="website">Website (Optional)</label>
+    <input type="text" id="website" name="website" placeholder="Website">
+
+    <label for="name">Name (Optional)</label>
+    <input type="text" id="name" name="name" placeholder="Name">
+
+    <label for="email">Contact Email (For Internal Use Only)</label>
+    <input type="text" id="email" name="email" placeholder="email">
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+</body>
+</html>

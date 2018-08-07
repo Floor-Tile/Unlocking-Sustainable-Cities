@@ -74,7 +74,6 @@ html,body{
 }
 
 .sub #something{
-  font-size: 35px;
   text-align: center;
   font-weight: bold;
   color: #000000;
@@ -82,7 +81,6 @@ html,body{
 }
 
 .sub #urban{
-  font-size: 35px;
   text-align: right;
   color: #000000;
   padding: 60px;
@@ -95,6 +93,12 @@ html,body{
 
 .sub h2{
   font-size: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+  .sub p{
+      font-size: 10px;
+  }
 }
 
 .chapters{

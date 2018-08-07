@@ -7,13 +7,14 @@ html,body{
 }
 
 /* For mobile devices */
-@media only screen and (max-width: 767px) {
+/*@media only screen and (max-width: 767px) {
   body {
     /* The file size of this background image is 93% smaller
     * to improve page load speed on mobile internet connections */
-    background-image: url(images/cfcfinal.jpg);
+    /*background-image: url(images/cfcfinal.jpg);
   }
-}
+}*/
+
 
 /* HOMEPAGE*/
 #index{
@@ -120,9 +121,31 @@ html,body{
   width: 450px;
 }
 
+@media only screen and (max-width: 768px) {
+  .row button{
+      width: 250px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .row button{
+      width: 150px;
+  }
+}
+
 .row button h2{
   font-size: 50px;
   color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  .row button h2{
+      font-size: 30px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .row button h2{
+      font-size: 20px;
+  }
 }
 
 .row button:hover{

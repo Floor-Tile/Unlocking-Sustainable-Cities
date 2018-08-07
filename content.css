@@ -363,13 +363,46 @@ html,body{
 }
 
 /*GET INVOLVED*/
-.involved h1{
+.involved{
   text-align: center;
+}
+.involved h1{
   font-size: 70px;
-  font-weight: bold;
+  color: black;
+}
+.involved button{
+  text-align: center;
+  background-color: rgba(255,255,255,1);
+  border-radius: 15px;
+  padding: 20px;
+  width: 450px;
 }
 
+.involved button:hover{
+  font-weight: bold;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
 
+/*ABOUT*/
+.about{
+  text-align: center;
+}
+.about h1{
+  font-size: 70px;
+  color: black;
+}
+.about button{
+  text-align: center;
+  background-color: rgba(255,255,255,1);
+  border-radius: 15px;
+  padding: 20px;
+  width: 450px;
+}
+
+.about button:hover{
+  font-weight: bold;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
 
 
 /* FOOTER */

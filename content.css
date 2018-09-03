@@ -231,11 +231,11 @@ html,body{
 }
 
 .un-title{
-  width: 17%;
+  width: 20%;
   transform: translate(-50%, -50%);
   position: absolute;
-  top: 5%;
-  left: 92%;
+  top: 8%;
+  left: 89%;
   padding: 10px;
   resize: both;
   overflow: auto;
@@ -496,6 +496,22 @@ font-size: 25px;
 
 #description{
   font-size: 18px;
+}
+
+/* ABOUT PAGE*/
+
+.about-paul h1{
+  font-size: 50px;
+  font-weight: bold;
+  color: #000000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.about-paul p{
+  font-size: 20px;
+  line-height: 1.6;
+  color: #000000;
 }
 
 /* FOOTER */

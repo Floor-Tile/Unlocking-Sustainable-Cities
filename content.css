@@ -315,9 +315,9 @@ html,body{
 
 /*BIO CITY & CAR FREE PAGES */
 .left-pic{
-  width: 50%;
-  height: 770px;
-  left: 0%;
+  width: 45%;
+  height: 800px;
+  left: 50px;
   position: absolute;
   top: 150px;
 }
@@ -357,9 +357,9 @@ html,body{
 
 /*POST CARBON AND COMMON CITY PAGES */
 .right-pic{
-  width: 50%;
-  height: 770px;
-  right: 0%;
+  width: 45%;
+  height: 800px;
+  right: 50px;
   position: absolute;
   top: 150px;
 }
@@ -459,6 +459,11 @@ html,body{
   line-height: 1.6;
 }
 
+.aboutdiv{
+  height: 200px;
+  width: 100%;
+}
+
 /* FOOTER */
 
 .footer {
@@ -469,7 +474,6 @@ html,body{
   background-color: #E8E8E8;
   color: black;
   height: 200px;
-  /*margin-top: 60px;*/
 }
 
 .footer a{

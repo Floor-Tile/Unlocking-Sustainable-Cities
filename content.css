@@ -1,5 +1,6 @@
 *{
   font-family: 'Encode Sans Condensed', sans-serif;
+  margin: 0;
 }
 
 html,body{
@@ -49,9 +50,45 @@ html,body{
   color: #000000;
 }
 
+@media only screen and (max-width: 992px) {
+  .main-title h1{
+    font-size:70px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-title h1{
+    font-size:50px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .main-title h1{
+    font-size:30px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .main-title h3{
+    font-size:40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-title h3{
+    font-size:30px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .main-title h3{
+    font-size:20px;
+  }
+}
+
 /*SCROLLING SUBTITLES*/
 .sub{
-  margin-top: 110%;
+  margin-top: 70%;
 }
 
 .sub p{
@@ -80,9 +117,56 @@ html,body{
 }
 
 /*MAKE TEXT MOBILE AND DEVICE FRIENDLY*/
+@media only screen and (max-width: 992px) {
+  .sub{
+    margin-top: 110%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sub{
+    margin-top: 110%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .sub{
+    margin-top: 200%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .sub p{
+    font-size: 35px;
+    padding:40px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .sub p{
-    font-size: 10px;
+    font-size: 25px;
+    padding:20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .sub p{
+    font-size: 15px;
+    padding:20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sub #urban{
+    font-size: 25px;
+    padding:20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .sub #urban{
+    font-size: 15px;
+    padding:20px;
   }
 }
 
@@ -91,10 +175,6 @@ html,body{
   margin-top: 130px;
   margin-bottom: 200px;
   width:115%;
-}
-
-#common-button{
-  margin-top: 50px;
 }
 
 #bio-button{
@@ -127,12 +207,14 @@ html,body{
 /*MAKE BUTTONS MOBILE AND DEVICE FRIENDLY*/
 @media only screen and (max-width: 768px) {
   .row button{
+    padding: 15px;
     width: 250px;
   }
 }
 
 @media only screen and (max-width: 576px) {
   .row button{
+    padding: 10px;
     width: 150px;
   }
 }
@@ -149,6 +231,7 @@ html,body{
   }
 }
 
+
 /*GET INVOLVED*/
 .involved{
   text-align: left;
@@ -156,6 +239,7 @@ html,body{
 .involved h1{
   font-size: 70px;
   color: #B1AB4B;
+  padding-left: 50px;
 }
 .involved a{
   text-decoration: none;
@@ -172,6 +256,7 @@ html,body{
 .about h1{
   font-size: 70px;
   color: #5A4F33;
+  padding-left: 50px;
 }
 
 .about a{
@@ -184,13 +269,14 @@ html,body{
 
 /*BUY THE BOOK*/
 .book{
-  margin-bottom: 200px;
+  margin-bottom: 300px;
 }
 
 .book h1{
   font-size: 70px;
   color: #87A094;
   text-align: left;
+  padding-left: 50px;
 }
 
 .book a{
@@ -204,102 +290,81 @@ html,body{
 .book-cover{
   position: absolute;
   width: 400px;
-  right: 20%;
+  right: 10%;
 }
 
-/*CAR FREE CITY PAGE */
-#car-free{
 
-  width:100%;
-  height:100%;
-  /* Location of the image */
-  background-image: url(images/cfcfinal.jpg);
-
-  /* Image is centered vertically and horizontally at all times */
-  background-position: left;
-
-  /* Image doesn't repeat */
-  background-repeat: no-repeat;
-
-  /* Makes the image fixed in the viewport so that it doesn't move when
-  the content height is greater than the image height */
-  background-attachment: fixed;
-
-  /* This is what makes the background image rescale based on its container's size */
-  background-size: 50% 100%;
-
-}
+/*CHAPTER PAGES*/
 
 .un-title{
-  width: 17%;
+  width: 20%;
   transform: translate(-50%, -50%);
   position: absolute;
-  top: 5%;
-  left: 92%;
+  top: 8%;
+  left: 89%;
   padding: 10px;
   resize: both;
   overflow: auto;
+  z-index: 1;
 }
 
-.car-free-title{
+.emptydiv{
+  height: 1000px;
+  width: 100%;
+}
+
+/*BIO CITY & CAR FREE PAGES */
+.left-pic{
+  width: 50%;
+  height: 770px;
+  left: 0%;
+  position: absolute;
+  top: 100px;
+}
+
+.left-title{
   width: 45%;
   transform: translate(-50%, -50%);
   position: absolute;
-  top: 15%;
+  top: 100px;
   left: 74.5%;
   padding: 10px;
   resize: both;
   overflow: auto;
 }
 
-.car-free-title h1{
+.left-title h1{
   font-size: 50px;
   text-align: center;
   font-weight: bold;
   color: #000000;
 }
 
-.car-free-text{
+.left-text{
   width: 45%;
-  transform: translate(-50%, -50%);
   position: absolute;
-  top: 55%;
-  left: 74.5%;
+  top: 150px;
+  right: 40px;
   padding: 10px;
   resize: both;
   overflow: auto;
 }
 
-.car-free-text p{
+.left-text p{
   font-size: 20px;
   color: #000000;
 }
 
-/*POST CARBON CITY PAGE */
-#post-carbon{
-  /* Location of the image */
-  background-image: url(images/PCP.jpg);
-
-  /* Image is centered right at all times */
-  background-position: right;
-
-  /* Image doesn't repeat */
-  background-repeat: no-repeat;
-
-  /* Makes the image fixed in the viewport so that it doesn't move when
-  the content height is greater than the image height */
-  background-attachment: fixed;
-
-  /* This is what makes the background image rescale based on its container's size */
-  background-size: 50% 100%;
-
-  /* Pick a solid background color that will be displayed while the background image is loading */
-  /*background-color:#FFFFFF;*/
-
-  padding: 20px;
+/*POST CARBON AND COMMON CITY PAGES */
+.right-pic{
+  width: 50%;
+  height: 770px;
+  right: 0%;
+  position: absolute;
+  top: 100px;
 }
 
-.post-carbon-title{
+.right-title{
   width: 45%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -310,138 +375,24 @@ html,body{
   overflow: auto;
 }
 
-.post-carbon-title h1{
+.right-title h1{
   font-size: 50px;
   text-align: center;
   font-weight: bold;
   color: #000000;
 }
 
-.post-carbon-text{
+.right-text{
   width: 45%;
-  transform: translate(-50%, -50%);
   position: absolute;
-  top: 60%;
-  left: 25.5%;
+  top: 150px;
+  left: 40px;
   padding: 10px;
   resize: both;
   overflow: auto;
 }
 
-.post-carbon-text p{
-  font-size: 20px;
-  color: #000000;
-}
-
-/*BIO CITY PAGE */
-#bio-city{
-  /* Location of the image */
-  background-image: url(images/bio.jpg);
-
-  /* Image is centered right at all times */
-  background-position: left;
-
-  /* Image doesn't repeat */
-  background-repeat: no-repeat;
-
-  /* Makes the image fixed in the viewport so that it doesn't move when
-  the content height is greater than the image height */
-  background-attachment: fixed;
-
-  /* This is what makes the background image rescale based on its container's size */
-  background-size: 50% 100%;
-
-  /* Pick a solid background color that will be displayed while the background image is loading */
-  /*background-color:#FFFFFF;*/
-
-  padding: 20px;
-}
-
-.bio-city-title{
-  width: 45%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 15%;
-  left: 74.5%;
-  padding: 10px;
-  resize: both;
-  overflow: auto;
-}
-
-.bio-city-title h1{
-  font-size: 50px;
-  text-align: center;
-  font-weight: bold;
-  color: #000000;
-}
-
-.bio-city-text{
-  width: 45%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
-  left: 74.5%;
-  padding: 10px;
-  resize: both;
-  overflow: auto;
-}
-
-.bio-city-text p{
-  font-size: 20px;
-  color: #000000;
-}
-
-/*COMMON CITY PAGE */
-#common-city{
-  /* Location of the image */
-  background-image: url(images/common.jpg);
-
-  /* Image is centered right at all times */
-  background-position: right;
-
-  /* Image doesn't repeat */
-  background-repeat: no-repeat;
-
-  /* Makes the image fixed in the viewport so that it doesn't move when
-  the content height is greater than the image height */
-  background-attachment: fixed;
-
-  /* This is what makes the background image rescale based on its container's size */
-  background-size: 50% 100%;
-
-  padding: 20px;
-}
-
-.common-city-title{
-  width: 45%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 15%;
-  left: 25.5%;
-  padding: 10px;
-  resize: both;
-  overflow: auto;
-}
-
-.common-city-title h1{
-  font-size: 50px;
-  text-align: center;
-  font-weight: bold;
-  color: #000000;
-}
-
-.common-city-text{
-  width: 45%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 60%;
-  left: 25.5%;
-  padding: 10px;
-  resize: both;
-  overflow: auto;
-}
-
-.common-city-text p{
+.right-text p{
   font-size: 20px;
   color: #000000;
 }
@@ -450,7 +401,7 @@ html,body{
 
 /* CONTACT */
 
-.get-in-touch h1{
+.get-in-touch1 h1{
   font-size: 80px;
   font-weight: bold;
   margin-top: 100px;
@@ -469,12 +420,6 @@ html,body{
   margin-bottom: 25px;
   width: 100%;
 }
-
-/*.input-group label{
-margin-bottom: 25px;
-width: 100%;
-font-size: 25px;
-}*/
 
 .contact .form-control {
   border-radius: 0 !important;
@@ -500,6 +445,20 @@ font-size: 25px;
   font-size: 18px;
 }
 
+/* ABOUT PAGE*/
+
+.about-paul h1{
+  font-size: 80px;
+  font-weight: bold;
+  margin-top: 100px;
+  padding-bottom: 20px;
+}
+
+.about-paul p{
+  font-size: 25px;
+  line-height: 1.6;
+}
+
 /* FOOTER */
 
 .footer {
@@ -510,7 +469,7 @@ font-size: 25px;
   background-color: #E8E8E8;
   color: black;
   height: 200px;
-  margin-top: 60px;
+  /*margin-top: 60px;*/
 }
 
 .footer a{

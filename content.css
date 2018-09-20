@@ -1,6 +1,7 @@
 *{
   font-family: 'Encode Sans Condensed', sans-serif;
   margin: 0;
+  padding: 0;
 }
 
 html,body{
@@ -29,7 +30,7 @@ html,body{
   width: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
-  top: 50%;
+  top: 200px;
   left: 50%;
   padding: 10px;
   resize: both;
@@ -87,33 +88,58 @@ html,body{
 }
 
 /*SCROLLING SUBTITLES*/
+
 .sub{
-  margin-top: 1300px;
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
-.sub p{
+.sub li{
+  margin-right: 50px;
+  font-size: 35px;
+  color: #000000;
+  opacity: 1;
+  transition: all 2.5s ease;
+  color: #000000;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.9);
+}
+
+.sub.hid li{
+  opacity: 0;
+
+}
+
+.sub.hid li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
+.sub.hid li:nth-child(2) { transform: translateX(20px) translateY(100px); }
+.sub.hid li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
+.sub.hid li:nth-child(4) { transform: translateX(10px) translateY(-200px); }
+.sub.hid li:nth-child(5) { transform: translateX(-300px) translateY(200px); }
+
+
+/*.sub p{
   font-size: 35px;
   text-align: left;
   color: #000000;
-  padding: 40px;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.9);
+  margin-top:50px;
 }
 
 .sub #something{
   text-align: center;
   font-weight: bold;
   color: #000000;
-  padding: 60px;
 }
 
 .sub #urban{
   text-align: right;
   color: #000000;
-  padding: 60px;
-}
-
-.sub span{
-  border-radius: 15px;
-  padding: 10px;
 }
 
 /*MAKE TEXT MOBILE AND DEVICE FRIENDLY*/
@@ -172,7 +198,7 @@ html,body{
 
 /*CHAPTER TITLES*/
 .chapters{
-  margin-top: 130px;
+  margin-top: 1300px;
   margin-bottom: 200px;
   width:115%;
 }
@@ -397,12 +423,10 @@ html,body{
   color: #000000;
 }
 
-/* ABOUT */
-
 /* CONTACT */
 
 .get-in-touch1 h1{
-  font-size: 80px;
+  font-size: 70px;
   font-weight: bold;
   margin-top: 100px;
 }
@@ -448,20 +472,27 @@ html,body{
 /* ABOUT PAGE*/
 
 .about-paul h1{
-  font-size: 80px;
+  font-size: 70px;
   font-weight: bold;
-  margin-top: 100px;
+  margin-top: 200px;
   padding-bottom: 20px;
 }
 
 .about-paul p{
   font-size: 25px;
   line-height: 1.6;
+  width: 60%;
 }
 
 .aboutdiv{
   height: 200px;
   width: 100%;
+}
+
+.paul{
+  position: absolute;
+  width: 400px;
+  right: 385px;
 }
 
 /* FOOTER */

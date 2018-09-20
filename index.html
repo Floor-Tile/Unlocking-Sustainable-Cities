@@ -2,22 +2,24 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <!-- Insert title -->
-    <title>Sustainable Cities</title>
     <!-- Make the page mobile friendly -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <!-- Link bootstrap -->
-    <link href='css/bootstrap.css' rel='stylesheet'>
+    <!-- Insert title -->
+    <title>Sustainable Cities</title>
+    <!-- Link bootstrap 
+    <link href='css/bootstrap.css' rel='stylesheet'>-->
     <!-- Link css stylesheet -->
     <link rel="stylesheet" href="content.css">
-    <!-- Link JQuery -->
+    <!-- Link JQuery
     <script
     src="https://code.jquery.com/jquery-2.2.4.min.js"
     integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
     crossorigin="anonymous"></script>
-    <script src="scroll/jquery.scrollme.js"></script>
+    <script src="scroll/jquery.scrollme.js"></script>-->
     <!-- Link google font family -->
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
+
+
   </head>
 
 
@@ -33,19 +35,28 @@
       </section>
     </header>
 
-    <div class="container">
-      <section class="sub">
-        <div class="scrollme">
+
+    <!--  <section class="sub">-->
+        <ul class="sub">
+          <li>Cities are being locked into unsustainable and damaging practices.</li>
+          <li>Corporate greed, ecological destruction and inequality are all on the rise.</li>
+          <li>But something amazing and invisible is happening...</li>
+          <li>Urban innovators from all walks of life are unlocking the huge potential of real sustainability.</li>
+          <li>Lets take a journey through this great unlocking...</li>
+        </ul>
+
+      <!--  <div class="scrollme">
           <div id="cities"
             class="animateme"
             data-when="enter"
-            data-from="0.6"
+            data-from="0.5"
             data-to="0"
             data-opacity="0"
             data-translatex="-800"
             data-rotatez="10"
-            data-easing="easeinout">
-            <p><span>Cities are being locked into unsustainable and damaging practices.</span></p>
+            data-easing="easeinout"
+            data-crop="true">
+            <p>Cities are being locked into unsustainable and damaging practices.</p>
           </div>
         </div>
 
@@ -53,14 +64,14 @@
           <div id="corporate"
             class="animateme"
             data-when="enter"
-            data-from="0.6"
+            data-from="0.15"
             data-to="0"
             data-opacity="0"
             data-translatex="-800"
             data-rotatez="20"
             data-easing="easeinout"
             >
-            <p><span>Corporate greed, ecological destruction and inequality are all on the rise.</span></p>
+            <p>Corporate greed, ecological destruction and inequality are all on the rise.</p>
           </div>
         </div>
 
@@ -68,14 +79,14 @@
           <div id="but"
           class="animateme"
           data-when="enter"
-          data-from="1"
+          data-from="0.2"
           data-to="0"
           data-opacity="0"
           data-translatex="-800"
           data-rotatez="0"
           data-easing="easeinout"
           >
-          <p id="something"><span>But something amazing and invisible is happening...</span></p>
+          <p id="something">But something amazing and invisible is happening...</p>
           </div>
         </div>
 
@@ -83,14 +94,14 @@
           <div id="urban"
           class="animateme"
           data-when="enter"
-          data-from="1"
+          data-from="0.25"
           data-to="0"
           data-opacity="0"
           data-translatex="800"
           data-rotatez="10"
           data-easing="easeinout"
           >
-          <p id="urban"><span>Urban innovators from all walks of life are unlocking the huge potential of real sustainability.</span></p>
+          <p id="urban">Urban innovators from all walks of life are unlocking the huge potential of real sustainability.</p>
           </div>
         </div>
 
@@ -98,18 +109,18 @@
           <div id="lets"
           class="animateme"
           data-when="enter"
-          data-from="1"
+          data-from="0.3"
           data-to="0"
           data-opacity="0"
           data-translatex="800"
           data-rotatez="20"
           data-easing="easeinout"
           >
-          <p id="urban"><span>Lets take a journey through this great unlocking...</span></p>
+          <p id="urban">Lets take a journey through this great unlocking...</p>
           </div>
-        </div>
-      </section>
-
+        </div>-->
+      <!--</section>-->
+      <div class="container">
       <section class="chapters">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
@@ -150,6 +161,19 @@
         </div>
       </section>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $(function() {
+
+            setTimeout(function() {
+                $('.fly-in-text').removeClass('hidden');
+            }, 500);
+
+        })();
+
+    </script>
+
   </body>
 
   <!-- FOOTER -->

@@ -89,57 +89,28 @@ html,body{
 
 /*SCROLLING SUBTITLES*/
 
-.sub{
-  list-style: none;
-  position: absolute;
-  left: 50%;
-  top: 60%;
-  transform: translateX(-50%) translateY(-50%);
+#sub {
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+    left: 8%;
+    font-size: 30px;
+    color: #000000;
+    opacity: 1;
+    transition: all 2.5s ease;
+    color: #000000;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.9);
+    margin-top: 400px;
 }
 
-.sub li{
-  margin-right: 50px;
-  font-size: 35px;
-  color: #000000;
-  opacity: 1;
-  transition: all 2.5s ease;
-  color: #000000;
-  border-radius: 15px;
-  padding: 10px;
-  background-color: rgba(255,255,255,0.9);
-}
-
-.sub.hid li{
-  opacity: 0;
-
-}
-
-.sub.hid li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
-.sub.hid li:nth-child(2) { transform: translateX(20px) translateY(100px); }
-.sub.hid li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
-.sub.hid li:nth-child(4) { transform: translateX(10px) translateY(-200px); }
-.sub.hid li:nth-child(5) { transform: translateX(-300px) translateY(200px); }
-
-
-/*.sub p{
-  font-size: 35px;
-  text-align: left;
-  color: #000000;
-  border-radius: 15px;
-  padding: 10px;
-  background-color: rgba(255,255,255,0.9);
-  margin-top:50px;
-}
-
-.sub #something{
-  text-align: center;
-  font-weight: bold;
-  color: #000000;
-}
-
-.sub #urban{
-  text-align: right;
-  color: #000000;
+/* Standard syntax */
+@keyframes example {
+    0%   {left:-200px; top:0px;}
+    25%  {left:200px; top:0px;}
 }
 
 /*MAKE TEXT MOBILE AND DEVICE FRIENDLY*/

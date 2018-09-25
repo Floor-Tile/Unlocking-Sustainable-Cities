@@ -161,6 +161,16 @@ html,body{
   overflow:hidden;
 }
 
+#ref{
+  margin-top: 120px;
+  margin-left: 1700px;
+  color: #000000;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.9);
+  width: 150px
+}
+
 /*MAKE TEXT MOBILE AND DEVICE FRIENDLY*/
 @media only screen and (max-width: 992px) {
   .sub{

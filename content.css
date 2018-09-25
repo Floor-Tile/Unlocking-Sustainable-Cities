@@ -88,29 +88,77 @@ html,body{
 }
 
 /*SCROLLING SUBTITLES*/
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+    width: 100%;
+  }
 
-#sub {
-    position: relative;
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    animation-name: example;
-    animation-duration: 4s;
-    left: 8%;
-    font-size: 30px;
-    color: #000000;
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
     opacity: 1;
-    transition: all 2.5s ease;
-    color: #000000;
-    border-radius: 15px;
-    padding: 10px;
-    background-color: rgba(255,255,255,0.9);
-    margin-top: 400px;
+  }
 }
 
-/* Standard syntax */
-@keyframes example {
-    0%   {left:-200px; top:0px;}
-    25%  {left:200px; top:0px;}
+#sub {
+  position: relative;
+  left: 450px;
+  margin-top: 400px;
+}
+
+.slide-right p{
+  color: #000000;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.9);
+  font-size: 30px;
+}
+
+#cities{
+  opacity: 0;
+  animation: 5s slide-right;
+  animation-fill-mode: forwards;
+}
+#corporate{
+  opacity: 0;
+  animation: 5s slide-right;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+
+}
+#but{
+  opacity: 0;
+  animation: 5s slide-right;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+
+}
+#urban{
+  opacity: 0;
+  animation: 5s slide-right;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+
+}
+#unlock{
+  opacity: 0;
+  animation: 5s slide-right;
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+
+}
+
+.slide-right {
+  width:1000px;
+  overflow:hidden;
 }
 
 /*MAKE TEXT MOBILE AND DEVICE FRIENDLY*/
@@ -169,7 +217,7 @@ html,body{
 
 /*CHAPTER TITLES*/
 .chapters{
-  margin-top: 1300px;
+  margin-top: 300px;
   margin-bottom: 200px;
   width:115%;
 }

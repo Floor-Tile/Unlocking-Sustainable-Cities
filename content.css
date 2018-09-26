@@ -2,6 +2,7 @@
   font-family: 'Encode Sans Condensed', sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html,body{
@@ -26,7 +27,7 @@ html,body{
 .main-title{
   border: 5px solid black;
   border-radius: 15px;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,1);
   width: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -38,14 +39,14 @@ html,body{
 }
 
 .main-title h1{
-  font-size: 70px;
+  font-size: 50px;
   text-align: center;
   font-weight: bold;
   color: #000000;
 }
 
 .main-title h3{
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   font-weight: bold;
   color: #000000;
@@ -110,8 +111,8 @@ html,body{
 
 #sub {
   position: relative;
-  left: 450px;
-  margin-top: 400px;
+  left: 18%;
+  margin-top: 300px;
 }
 
 .slide-right p{
@@ -119,45 +120,44 @@ html,body{
   border-radius: 15px;
   padding: 10px;
   background-color: rgba(255,255,255,0.9);
-  font-size: 30px;
+  font-size: 20px;
 }
 
 #cities{
   opacity: 0;
-  animation: 5s slide-right;
+  animation: 3s slide-right;
   animation-fill-mode: forwards;
 }
 #corporate{
   opacity: 0;
-  animation: 5s slide-right;
+  animation: 3s slide-right;
   animation-delay: 2s;
   animation-fill-mode: forwards;
 
 }
 #but{
   opacity: 0;
-  animation: 5s slide-right;
+  animation: 3s slide-right;
   animation-delay: 4s;
   animation-fill-mode: forwards;
 
 }
 #urban{
   opacity: 0;
-  animation: 5s slide-right;
+  animation: 3s slide-right;
   animation-delay: 6s;
   animation-fill-mode: forwards;
 
 }
 #unlock{
   opacity: 0;
-  animation: 5s slide-right;
+  animation: 3s slide-right;
   animation-delay: 8s;
   animation-fill-mode: forwards;
-
 }
 
 .slide-right {
-  width:1000px;
+  width: 800px;
   overflow:hidden;
 }
 
@@ -227,7 +227,7 @@ html,body{
 
 /*CHAPTER TITLES*/
 .chapters{
-  margin-top: 300px;
+  margin-top: 100px;
   margin-bottom: 200px;
   width:115%;
 }
@@ -286,6 +286,27 @@ html,body{
   }
 }
 
+/*MANIFESTO*/
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .column {
+        width: 100%;
+    }
+}
 
 /*GET INVOLVED*/
 .involved{

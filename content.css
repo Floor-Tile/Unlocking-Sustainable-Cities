@@ -1,3 +1,4 @@
+
 *{
   font-family: 'Encode Sans Condensed', sans-serif;
   margin: 0;
@@ -39,40 +40,41 @@ html,body{
 }
 
 .main-title h1{
-  font-size: 50px;
+  font-size: 70px;
   text-align: center;
   font-weight: bold;
   color: #000000;
 }
 
 .main-title h3{
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
   font-weight: bold;
   color: #000000;
 }
 
+/*MAKE TEXT MOBILE AND DEVICE FRIENDLY*/
 @media only screen and (max-width: 992px) {
-  .main-title h1{
-    font-size:70px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
   .main-title h1{
     font-size:50px;
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .main-title h1{
+    font-size:40px;
+  }
+}
+
 @media only screen and (max-width: 576px) {
   .main-title h1{
-    font-size:30px;
+    font-size:40px;
   }
 }
 
 @media only screen and (max-width: 992px) {
   .main-title h3{
-    font-size:40px;
+    font-size:30px;
   }
 }
 
@@ -110,9 +112,9 @@ html,body{
 }
 
 #sub {
+  margin: auto;
   position: relative;
-  left: 18%;
-  margin-top: 300px;
+  margin-top: 400px;
 }
 
 .slide-right p{
@@ -120,7 +122,8 @@ html,body{
   border-radius: 15px;
   padding: 10px;
   background-color: rgba(255,255,255,0.9);
-  font-size: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 
 #cities{
@@ -131,33 +134,33 @@ html,body{
 #corporate{
   opacity: 0;
   animation: 3s slide-right;
-  animation-delay: 2s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
 
 }
 #but{
   opacity: 0;
   animation: 3s slide-right;
-  animation-delay: 4s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
 
 }
 #urban{
   opacity: 0;
   animation: 3s slide-right;
-  animation-delay: 6s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
 
 }
 #unlock{
   opacity: 0;
   animation: 3s slide-right;
-  animation-delay: 8s;
+  animation-delay: 4s;
   animation-fill-mode: forwards;
 }
 
 .slide-right {
-  width: 800px;
+  width: 870px;
   overflow:hidden;
 }
 
@@ -173,55 +176,75 @@ html,body{
 
 /*MAKE TEXT MOBILE AND DEVICE FRIENDLY*/
 @media only screen and (max-width: 992px) {
-  .sub{
-    margin-top: 110%;
+  #sub{
+    margin-top: 350px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .sub{
-    margin-top: 110%;
+  #sub{
+    margin-top: 400px;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .sub{
-    margin-top: 200%;
+  #sub{
+    margin-top: 350px;
   }
 }
 
 @media only screen and (max-width: 992px) {
-  .sub p{
-    font-size: 35px;
-    padding:40px;
+  .slide-right p{
+    font-size:20px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .sub p{
-    font-size: 25px;
-    padding:20px;
+  .slide-right p{
+    font-size:20px;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .sub p{
-    font-size: 15px;
-    padding:20px;
+  .slide-right p{
+    font-size:20px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .slide-right{
+    width: 700px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .sub #urban{
-    font-size: 25px;
-    padding:20px;
+  .slide-right{
+    width: 500px;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .sub #urban{
-    font-size: 15px;
-    padding:20px;
+  .slide-right{
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #ref{
+    margin-left: 600px;
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #ref{
+    margin-left: 500px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #ref{
+    margin-left: 300px;
   }
 }
 
@@ -260,6 +283,12 @@ html,body{
 }
 
 /*MAKE BUTTONS MOBILE AND DEVICE FRIENDLY*/
+@media only screen and (max-width: 992px) {
+  .row button{
+    padding: 15px;
+    width: 250px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .row button{
     padding: 15px;
@@ -274,6 +303,12 @@ html,body{
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .row button{
+    padding: 15px;
+    width: 250px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .row button h2{
     font-size: 30px;

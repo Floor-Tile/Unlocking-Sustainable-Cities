@@ -68,7 +68,7 @@ html,body{
 
 @media only screen and (max-width: 576px) {
   .main-title h1{
-    font-size:40px;
+    font-size:30px;
   }
 }
 
@@ -254,7 +254,6 @@ html,body{
   width:115%;
 }
 
-
 .row h2{
   text-align: center;
   border: 2px solid black;
@@ -340,11 +339,51 @@ html,body{
 }
 
 /*MANIFESTO*/
+#car-man.container{
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 90%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255,255,255,0.5);
+}
+
+#car-man.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: #000000;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 /* Create four equal columns that floats next to each other */
 .column {
   float: left;
-  width: 25%;
-  padding: 10px;
+  width: 50%;
+  padding: 20px;
 }
 
 /* Clear floats after the columns */
@@ -373,13 +412,13 @@ html,body{
   color: #000000;
 }
 
-#cross{
-  font-size: 20px;
-  padding-bottom: 50px;
+#manifesto{
+  padding-bottom: 100px;
 }
 
-#cross h2{
-  font-weight: bold;
+.mani-car{
+    width: 100%;
+    height: auto;
 }
 
 /*GET INVOLVED*/

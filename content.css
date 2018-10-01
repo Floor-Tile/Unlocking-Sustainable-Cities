@@ -360,7 +360,7 @@ html,body{
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.8);
 }
 
 #car-man.container:hover .overlay {
@@ -405,6 +405,14 @@ html,body{
   font-weight: bold;
   margin-top: 200px;
   padding-bottom: 20px;
+}
+
+.manifesto-title ul{
+  font-size: 20px;
+}
+
+.manifesto-title{
+  padding-bottom: 100px;
 }
 
 #manifesto a{

@@ -1,17 +1,14 @@
-<?php
-if($_POST["submit"]) {
-  $recipient="p.chatterton@leeds.ac.uk";
-  $subject="Unlocking Sustainable Cities Form Submission";
-  $example=$_POST["example"];
-  $location=$_POST["location"];
-  $website=$_POST["website"];
-  $sender=$_POST["name"];
-  $senderEmail=$_POST["email"];
-  $message=$_POST["description"];
-
-  $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-
-  mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-
-  $thankYou="<p>Thank you! Your message has been sent.</p>";
-}
+<?php $example = $_POST['example'];
+$location = $_POST['location'];
+$website = $_POST['website'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$dropdown = $POST['dropdown'];
+$message = $_POST['description'];
+$formcontent="Name of Example: $example \n Location: $location \n Website: $website \n Name: $name \n Email: $email \n Chapter: $dropdown \n Description: $message";
+$recipient = "p.chatterton@leeds.ac.uk";
+$subject = "Unlocking Sustainable Cities Form Submission";
+$mailheader = "From: $email \r\n";
+mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+echo "Thank You! Click return to go back";
+?>

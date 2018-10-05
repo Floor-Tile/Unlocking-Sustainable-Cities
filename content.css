@@ -24,7 +24,7 @@ html,body{
   background-color:#FFFFFF;
 }
 
-/*MAIN TITLE*/
+/*HOMEPAGE MAIN TITLE*/
 .main-title{
   border: 5px solid black;
   border-radius: 15px;
@@ -32,7 +32,7 @@ html,body{
   width: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   padding: 10px;
   resize: both;
@@ -40,20 +40,56 @@ html,body{
 }
 
 .main-title h1{
-  font-size: 70px;
+  font-size: 60px;
   text-align: center;
   font-weight: bold;
   color: #000000;
 }
 
 .main-title h3{
-  font-size: 50px;
+  font-size: 45px;
   text-align: center;
-  font-weight: bold;
   color: #000000;
 }
 
+.enter-site{
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  resize: both;
+  overflow: auto;
+}
+
+.enter-site h3{
+  border: 5px solid black;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,1);
+  font-size: 40px;
+  text-align: center;
+  color: #000000;
+  text-decoration:none;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 400px;
+}
+
+.enter-site h3:hover{
+  font-weight: bold;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.enter-site a:hover{
+  text-decoration: none;
+}
+
 /*MAKE TEXT MOBILE AND DEVICE FRIENDLY*/
+@media only screen and (max-width: 1200px) {
+  .main-title h1{
+    font-size:60px;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .main-title h1{
     font-size:50px;
@@ -114,14 +150,11 @@ html,body{
 #sub {
   margin: auto;
   position: relative;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .slide-right p{
   color: #000000;
-  border-radius: 15px;
-  padding: 10px;
-  background-color: rgba(255,255,255,0.9);
   font-size: 30px;
   text-align: center;
 }
@@ -136,21 +169,18 @@ html,body{
   animation: 3s slide-right;
   animation-delay: 1s;
   animation-fill-mode: forwards;
-
 }
 #but{
   opacity: 0;
   animation: 3s slide-right;
   animation-delay: 2s;
   animation-fill-mode: forwards;
-
 }
 #urban{
   opacity: 0;
   animation: 3s slide-right;
   animation-delay: 3s;
   animation-fill-mode: forwards;
-
 }
 #unlock{
   opacity: 0;
@@ -164,18 +194,77 @@ html,body{
   animation: 3s slide-right;
   animation-delay: 5s;
   animation-fill-mode: forwards;
-}
-
-#arrow{
-  opacity: 0;
-  animation: 3s slide-right;
-  animation-delay: 5s;
-  animation-fill-mode: forwards;
+  font-weight: bold;
 }
 
 .slide-right {
   width: 870px;
   overflow:hidden;
+}
+
+/*SCROLL*/
+#section04 {
+  position: relative;
+  width: 100%;
+  height: 20%;
+}
+
+.demo a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #000000;
+  font-size: 30px;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.demo a:hover {
+  opacity: .5;
+}
+
+#section04 a {
+  padding-top: 60px;
+}
+#section04 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  margin-left: -12px;
+  border-left: 5px solid #000000;
+  border-bottom: 5px solid #000000;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb04 2s infinite;
+  animation: sdb04 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb04 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+@keyframes sdb04 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
 }
 
 #ref{
@@ -263,8 +352,8 @@ html,body{
 }
 
 /*CHAPTER TITLES*/
-.chapters{
-  margin-top: 100px;
+#chapters{
+  margin-top: 120px;
   width:115%;
 }
 

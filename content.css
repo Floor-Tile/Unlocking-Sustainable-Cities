@@ -449,7 +449,7 @@ html,body{
 
 .image {
   display: block;
-  width: 90%;
+  width: 100%;
   height: auto;
 }
 
@@ -588,7 +588,6 @@ html,body{
 }
 
 .book-cover{
-  position: absolute;
   width: 400px;
   right: 385px;
 }
@@ -683,12 +682,14 @@ html,body{
 }
 
 /*POST CARBON AND COMMON CITY PAGES */
+.home-button{
+  width: 200px;
+  margin: 20px;
+}
+
 .right-pic{
-  width: 45%;
-  height: 800px;
-  right: 50px;
-  position: absolute;
-  top: 150px;
+  max-height: 800px;
+  max-width: 100%;
 }
 
 .right-title{
@@ -762,6 +763,18 @@ html,body{
   color: white;
 }
 
+.submit{
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.submit:hover{
+  font-weight: bold;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  text-decoration: none;
+}
+
 #chapter{
   width: 100%;
   font-size: 25px;
@@ -796,17 +809,16 @@ html,body{
   width: 400px;
   right: 385px;
 }
+.mb-4{
+  margin-bottom: 20px;
+}
 
 /* FOOTER */
 
 .footer {
-  left: 0;
-  bottom: 0;
-  right: 0;
   width: 100%;
   background-color: #E8E8E8;
   color: black;
-  height: 200px;
 }
 
 .footer a{
